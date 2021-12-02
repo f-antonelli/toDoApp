@@ -1,0 +1,123 @@
+.container-form{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 40vw;
+   flex-direction: column;
+   height: 100vh;
+   h2 {
+      padding: 10px 0 4px 0;
+      text-align: center;
+   }
+   .form{
+      display: flex;
+      flex-direction: column;
+      background: #222222;
+      width: 95%;
+      max-width: 440px;
+      margin: 10px;
+      padding: 30px 10px;
+      border-radius: 10px;
+      input[type="text"] {
+         padding: 10px;
+         outline: none;
+         margin: 30px 0 5px 0;
+         background: #333333;
+         border: 1px solid transparent;
+         color: white;
+         &:focus{
+            border: 1px solid #FF5A60;
+         }
+         &::placeholder{
+            color: white;
+            font-size: 16px;
+         }
+      }
+      textarea{
+         padding: 10px;
+         outline: none;
+         resize: none; 
+         margin: 5px 0;
+         background: #333333;
+         border: 1px solid transparent;
+         color: white;
+         &:focus{
+            border: 1px solid #FF5A60;
+         }
+         &::placeholder{
+            color: white;
+            font-size: 16px;
+         }
+      }
+      .container-items{
+         display: flex;
+         justify-content: space-between;
+         padding: 0;
+         select{
+            padding: 10px 0;
+            width: 30%;
+            border: 1px solid transparent;
+            background: #FF5A60;
+            margin: 5px 0;
+            option:hover{
+                  background: #FF5A60;
+               }
+         }
+         .input-checkbox {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+            label{
+               font-weight: 600;
+               font-size: 18px;
+               margin-left: 5px;
+            }
+            input[type="checkbox"] {
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               appearance: none;
+               height: 20px;
+               width: 20px;
+               background: #d5d5d5;
+               border-radius: 5px;
+               cursor: pointer;
+               outline: none;
+               &::after{
+                  font-family: "Font Awesome 5 Free";
+                  font-weight: 900;
+                  content: '\f00c';
+                  font-size: 15px;
+                  color: white;
+                  display: none;
+               }
+               &:hover{
+                  background: #a5a5a5;
+               }
+               &:checked{
+                  background: #FF5A60;
+               }
+               &:checked::after{
+                  display: block;
+               }
+            }
+         }
+      }
+      .submit{
+         outline: none;
+         border: none;
+         border-radius: 10px;
+         padding: 10px 0;
+         margin: 10px 0;
+         background: #333333;
+         color: white;
+         font-weight: 700;
+         letter-spacing: .5px;
+         font-size: 16px;
+         text-transform: uppercase;
+         &:hover{
+            background: #FF5A60;
+         }
+      }
+   }
+}
